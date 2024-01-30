@@ -12,78 +12,269 @@
     </head>
     <body>
         <!-- Responsive navbar-->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
             <!-- logo -->
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="./img/logo.png" alt="logo picture" width="40px" height="35px">
-                    La Tomatina
+                    <strong>La Tomatina</strong>
                 </a>
                 <!-- hamburger menu -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <!-- navlist -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#!">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">History</a></li>
+                                <li><a href="#" class="dropdown-item">objective</a></li>
+                                <li><a href="#" class="dropdown-item">Activity</a></li>
+                                <li><a href="#" class="dropdown-item">Gallery</a></li>
+                                <li><a href="#" class="dropdown-item">Refer</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-black" href="#!">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Header - set the background image for the header in the line below-->
         <header>
-            <div class="carousel slide" id="slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <button  class="active" data-bs-target="#slide" data-bs-slide-to="0"></button>
-                    <button  data-bs-target="#slide" data-bs-slide-to="1"></button>
-                    <button  data-bs-target="#slide" data-bs-slide-to="2"></button>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="./img/Travel-MThai-32.jpg" alt="tomato 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./img/tomato-fight-festival-09.jpg" alt="tomato 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./img/download.jpg" alt="tomato 3">                        
-                    </div>
-                </div>
-                <!-- prev & next -->
-                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slide">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slide">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
+            <div class="hero">
+				<div class="container mb-2">
+					<div class="row justify-content-between">
+						<div class="col-lg-5 mt-3">
+							<div class="intro-excerpt p-1" id="intro">
+								<h1>La Tomatina <br><span clsas="d-block">เทศกาลปา<span id="texttomato">มะเขือเทศ</span></span></h1>
+								<p class="my-3 fs-5">มันคือการใช้มะเขือเทศเป็นอาวุธ มันคือสงครามอาหารที่ใหญ่ที่สุดในโลก มันเป็นเทศกาลที่แดงฉ่ำไปทั่วพื้นที่
+                                    หลังเทศกาลนี้จบลงเราจะ....เบื่อซอสมะเขือเทศไปอีกนาน</p>
+								<p><a href="#bio" class="btn btn-secondary me-2" style="background-color: #ff6347; border-color: #ff6347;">Read More</a></p>
+							</div>
+						</div>
+						<div class="col-lg-7 mt-3">
+							<div class="hero-img-wrap">
+								<img src="./img/Travel-MThai-32.jpg" class="img-fluid" style="border-radius: 20px;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
         </header>
-
-        <!-- Content section-->
-        <section class="py-3">
-            <div class="container my-4">
+        
+        <!-- ประวัติความเป็นมา -->
+        <hr>
+        <section class="pt-1" id="bio">
+            <div class="container mb-2">
                 <div class="row justify-content-strat">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <h2 class="text-center"><strong>เทศกาลปามะเขือเทศ (La Tomatina)</strong></h2><br>
-                        <h3 class="text-start "><strong>ประวัติความเป็นมา</strong></h3>
+                    <div class="col-12">
+                        <h2 class="ps-2"><strong>ประวัติความเป็นมา</strong></h2>
+                        <p>ต้นกำเนิดของเทศกาลนี้ย้อนไปเมือปี 1944 ระหว่างขบวนพาเหรด gigantes y cabzudos เกิดมีเหตุการณ์วัยรุ่นทะเลาะกัน และเจ้ากรรมดันมีแผงขายมะเขือเทศอยู่ใกล้มือพวกวัยรุ่น พวกเขาจึงใช้มันเป็นอาวุธในการขว้างปาเข้าใส่กัน จนตำรวจต้องเข้ามายุติศึกมะเขือเทศ และทำการปรับค่าเสียหาที่เกิดขึ้นจากเหตุการณ์นี้
+                            ในปีต่อมาพวกวัยรุ่นก็ยังคงมาเปิดศึกกันอีกเช่นเคยเหมือนปีที่แล้ว แต่สิ่งที่ต่างออกไปในปีนี้คือ พวกเขาเตรียมมะเขือเทศกันมาจากบ้าน 
+                            และก็ต้องลำบากตำรวจอีกแล้วที่ต้องเข้ามายุติเหตุการณ์ทะเลาะวิวาท แต่มันก็คือประถมบทแห่งเทศกาลปามะเขือเทศ อันลือลั่นที่ถูกจัดขึ้นมาอย่างต่อเนื่องทุกปีเรื่อยมา เป็นระยะเวลานานกว่า 70 ปี
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Image element - set the background image for the header in the line below-->
-        <div class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800')">
-            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
-            <div style="height: 20rem"></div>
-        </div>
-        <!-- Content section-->
-        <section class="py-5">
-            <div class="container my-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h2>Engaging Background Images</h2>
-                        <p class="lead">The background images used in this template are sourced from Unsplash and are open source and free to use.</p>
-                        <p class="mb-0">I can't tell you how many people say they were turned off from science because of a science teacher that completely sucked out all the inspiration and enthusiasm they had for the course.</p>
+        <hr>
+        <!-- วัตถุประสงค์ -->
+        <section class="py-2" id="objective">
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="ps-2"><strong>วัตถุประสงค์</strong></h2>
+                        <p>
+                            อีกหนึ่งเหตุผลที่ทางสเปนจัด เทศกาลปามะเขือเทศ ในช่วงเดือนสิงหาคม เนื่องจากเป็นช่วงฤดูร้อนของปีที่พืชพันธุ์อุดมสมบูรณ์เป็นพิเศษ และเพื่อเป็นการกำจัดมะเขือเทศล้นตลาด ทางการจึงคิดวิธีในการเคลียร์ผลผลิตที่เหลือด้วยกิจกรรมนี้ ซึ่งมะเขือเทศที่นำมาใช้ปาใน La Tomatina มาจากทางแคว้น Extremadura 
+                            ที่มีเสียงร่ำลือว่าราคาถูก อีกทั้งรสชาติไม่อร่อย จึงถูกนำมาใช้เพื่อการนี้ โดยจะมีเวลา 1 ชั่วโมงในการปามะเขือเทศใส่กัน ซึ่งทันทีที่มีเสียงสัญญาณดังขึ้นอีกครั้ง ทุกคนต้องหยุดทันที เพื่อให้ทางเจ้าหน้าที่ได้ทำการเคลียร์พื้นที่ ทำความสะอาดเศษซากมะเขือเทศให้กลับมาเป็นเมืองบูโยลที่สวยงามดังเดิม แต่อย่างไรก็ตาม การนำมะเขือเทศมาเขวี้ยงปาอย่างมหาศาลในเทศกาลนี้ก็มีเสียงสะท้อนของใครหลายคนว่า ถือเป็นการทำให้เกิดภาวะสิ้นเปลืองอาหารหรือไม่ ก็จริงอยู่ว่ามะเขือเทศที่นำมาใช้ปาในเทศกาลส่วนใหญ่ผลผลิตใกล้เน่าเสียแล้ว แต่เหมาะสมที่จะเอามาขว้างปาใส่กันงั้นหรือ ก็ยังคงเป็นคำถามที่ยังไม่สามารถหาคำตอบที่ชัดเจนได้ แต่ถ้ามองในแง่ดีงานดังกล่าวคือจัดเพื่อความสนุกสนานและเพื่อเป็นการกำจัดปัญหามะเขือเทศล้นตลาด
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- กิจกรรม -->
+        <section class="py-2" id="activities">
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="ps-2"><strong>กิจกรรม</strong></h2>
+                        <p>
+                            La Tomatina จัดขึ้นเป็นประจำทุกปีทุกวันพุธสุดท้ายของเดือนสิงหาคม ณ เมือง บูโยล ประเทศสเปน ที่วันนั้นถนนทั้งเส้นจะกลายเป็นสมรภูมิสีแดงฉานที่เต็มไปด้วยมะเขือเทศที่เหล่านักท่องเที่ยวจะนำมาขว้างปาใส่กันอย่างสนุกสนาน แต่เดี๋ยวก่อน การที่จะเข้าร่วมงาน เทศกาลปามะเขือเทศ ไม่ใช่นึกจะปาก็ปาได้เลยนะ เพราะตัวงานจะมีพิธีเปิดอย่างเป็นทางการเริ่มประมาณ 10 โมงเช้า ก่อนที่จะเริ่มขว้างปามะเขือเทศใส่กันตั้งแต่ 11 โมงเป็นต้นไป แม้งานนี้จะเน้นความสะใจแบบไม่มีใครถือโทษโกรธเคืองกันก็ตาม แต่ก่อนที่จะขว้างปามะเขือเทศ ผู้เข้าร่วมงานจะต้องบีบมันให้แหลกเสียก่อน เพราะถ้าปาทั้งลูกโดยไม่มีการบีบหรือทำให้เละก่อนอาจเกิดอันตราย หรือ บาดเจ็บได้
+                            <br>สำหรับนักท่องเที่ยวที่อยากไปสัมผัสประสบการณ์เละ ๆ แต่เต็มไปด้วยความสนุกสนานอย่าง La Tomatina แต่ไม่ถนัดในการวางแผนทริปด้วยตัวเอง สามารถหาทัวร์เที่ยวงานเทศกาลปามะเขือเทศได้โดยเฉพาะหรือติดต่อมาที่ Artralux ผู้เชี่ยวชาญด้านการให้บริการเช่าเฮลิคอปเตอร์แบบส่วนตัวเพื่อสร้างการเดินทางไปเทศกาลปามะเขือเทศ ที่จะทำให้คุณประทับใจไม่รู้ลืม ให้ Artralux เป็นคนพาคุณไปสัมผัสประสบการณ์แห่งความสนุกที่หนึ่งปีมีเพียงครั้งเดียวที่สเปนด้วยตัวคุณเอง
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h4>ลักษณะของมะเขือเทศที่นำมาใช้</h4>
+                        <ol type="1">
+                            <li>ต้องทำให้น่วม (กันเจ็บตัว)</li>
+                            <li>รสชาติไม่อร่อย (ไม่ต้องชิม)</li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h4>เตรียมตัวอย่างไร?</h4>
+                        <ol type="1">
+                            <li>ควรใส่เสื้อผ้าเก่าที่พร้อมทิ้งเพราะต้องเลอะเทอะจนต้องทิ้งเสื้อแน่นอน</li>
+                            <li>ควรเลือกใส่รองเท้าที่ทะมัดทะแมง รองเท้าแตะเลิกคิดไปเลย</li>
+                            <li>อุปกรณ์อิเลคทรอนิกส์ต่างๆให้ระวังด้วยนะจ๊ะ</li>
+                            <li>สำหรับคนที่อยากเข้าไปพักแถวๆนั้นต้องรีบจองที่พักเพราะเต็มเร็วมาก</li>
+                            <li>ต้องซื้อตั๋วถึงจะเข้าร่วมเทศกาลนี้ได้</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- gallery -->
+        <section class="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12"></div>
+                    <div class="section-header text-center">
+                        <h3 class="mb-3">Gallery</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#popup1">
+                            <img src="./img/tomato1.jpg" alt="tomato1">
+                        </div>
+                    </div>
+                    <!-- img2 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#popup2">
+                            <img src="./img/tomato2jpg.jpg" alt="tomato2jpg">
+                        </div>
+                    </div>
+                    <!-- img3 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#popup3">
+                            <img src="./img/tomato3.jpg" alt="tomato3">
+                        </div>
+                    </div>
+                    <!-- img4 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#popup4">
+                            <img src="./img/tomato4.jpg" alt="tomato04">
+                        </div>
+                    </div>
+                    <!-- img5 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#popup5">
+                            <img src="./img/tomato5.jpg" alt="tomato5">
+                        </div>
+                    </div>
+                    <!-- img6 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#popup6">
+                            <img src="./img/tomato6.jpg" alt="tomato6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal -->
+            <div class="modal fade" id="popup1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <img src="./img/tomato1.jpg" alt="tomato1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="popup2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <img src="./img/tomato2jpg.jpg" alt="tomato2jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="popup3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <img src="./img/tomato3.jpg" alt="tomato3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="popup4">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <img src="./img/tomato4.jpg" alt="tomato4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="popup5">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <img src="./img/tomato5.jpg" alt="tomato5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="popup6">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <img src="./img/tomato6.jpg" alt="tomato6">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- อ้างอิง -->
+        <section class="py-3" id="ref">
+            <div class="container">
+                <h2 class="justify-content-strat ps-2"><strong>อ้างอิง</strong></h2>
+                <div class="row g-3">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <!-- web1 -->
+                        <div class="card d-inline">
+                            <div class="card" style="width: 15rem;">
+                                <img src="./assets/mthai_logo.png" class="card-img-top" alt="mthai_logo">
+                                <div class="card-body">
+                                  <h5 class="card-title">M thai</h5>
+                                  <p class="text-secondary">เทศกาลปามะเขือเทศ (La Tomatina) สงครามอาหารสุดดุเดือด</p>
+                                  <hr>
+                                  <div class="text-center">
+                                    <a href="https://travel.mthai.com/world-travel/90818.html" target="_blank" class="btn btn-warning">Go to website.</a>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <!-- web2 -->
+                        <div class="card d-inline">
+                           <div class="card" style="width: 15rem;">
+                                <img src="./assets/bird_logo.png" class="card-img-top" alt="mthai_logo">
+                                <div class="card-body">
+                                <h5 class="card-title">Freebirdtour</h5>
+                                <p class="text-secondary">เทศกาลปามะเขือเทศ (La Tomatina) สงครามอาหารสุดดุเดือด</p>
+                                <hr>
+                                <div class="text-center">
+                                    <a href="https://www.freebirdtour.com/16927022/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B8%9B%E0%B8%B2%E0%B8%A1%E0%B8%B0%E0%B9%80%E0%B8%82%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%97%E0%B8%A8-la-tomatina" target="_blank" class="btn btn-warning">Go to website.</a>
+                                </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <!-- web3 -->
+                        <div class="card d-inline">
+                           <div class="card" style="width: 15rem; ">
+                                <img src="./assets/astra_logo.png" class="card-img-top" alt="mthai_logo">
+                                <div class="card-body">
+                                <h5 class="card-title">Artralux</h5>
+                                <p class="text-secondary">หนึ่งปีมีเพียง 1 ครั้ง! พบกับ La Tomatina เทศกาลปามะเขือเทศสุดฮิตแห่งแดนสเปน!</p>
+                                <hr>
+                                <div class="text-center">
+                                    <a href="https://artralux.co.th/travel-guide/la-tomatina" target="_blank" class="btn btn-warning">Go to website.</a>
+                                </div>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
                 </div>
             </div>
