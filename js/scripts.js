@@ -1,1 +1,4 @@
-<script src="https://kit.fontawesome.com/33742628d2.js" crossorigin="anonymous"></script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})

@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Mitr&family=Playfair+Display:wght@400;600&display=swap');
 header{
-  background-image: url('');
+  font-family: 'Mitr', sans-serif;
 }
 body{
   background-color: whitesmoke;
+  font-family: 'Playfair Display', serif;
+}
+section{
+  font-family: 'Chakra Petch', sans-serif;
 }
 html{
   scroll-behavior: smooth;
   scroll-padding: 5rem;
 }
-/* section{
-  background-color:blanchedalmond;
-} */
 .navbar{
   box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -22,13 +24,6 @@ html{
   position: relative;
 }
 .nav-link::before{
-  /* content: '';
-  height: 2px;
-  width: 100%;
-  background-color: #ff6347;
-  position: absolute;
-  bottom: 0;
-  left: 0; */
   content: '';
   position: absolute;
   bottom: -3px;
@@ -45,12 +40,15 @@ html{
   width: 75%;
 }
 #redmore:hover{
-  background-color: #ff474a;
   border-color: #ff474a;
 }
+#locate{
+  height: 36px;
+  background-color: #ff6347; 
+  border-color: #ff6347;
+}
 #texttomato{
-  background-color: #ff6347;
-  border-radius: 15px;
+  color: #ff6347;
 }
 #intro{
   border: 2px solid wheat;
@@ -71,19 +69,58 @@ h2{
   margin-bottom: 10px;
 }
 .gallery-item{
-  position: relative;
-  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.5);
-  max-height: 400px;
-  margin-bottom: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
 }
 .gallery-item img{
+  height: 220px;
   width: 100%;
-  height: 50%;
-  /* height: auto; */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  object-fit: cover;
 }
 .gallery-item:hover{
   transform: scale(1.1);
 }
+#popup1,#popup2,#popup3,#popup4,#popup5,#popup6{
+  position: fixed;
+  top: 50%;left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
 section{
   scroll-padding-top: 300px;
+}
+#sub-footer{
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+#social{
+  border-radius: 10px;
+}
+#social:hover{
+  transform: scale(1.1);
+}
+video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: .2s linear;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+video:hover {
+  transform: scale(1.1);
+}
+#vdo1,#vdo2,#vdo3{
+  position: fixed;
+  top: 50%;left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
 }
